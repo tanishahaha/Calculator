@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Calculator App</h1>
+    <div class="cont">
+        <table>
+            <tr>
+                <td colspan="3">
+                    <input type="text" name="" id="result" class="screen">
+                </td>
+                <td>
+                    <input type="button" value="C" onclick="clearSreen()" class="clear">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="disp('1')" class="num"></td>
+                <td><input type="button" value="2" onclick="disp('2')" class="num"></td>
+                <td><input type="button" value="3" onclick="disp('3')" class="num"></td>
+                <td><input type="button" value="/" onclick="disp('/')" class="opr"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="disp('4')" class="num"></td>
+                <td><input type="button" value="5" onclick="disp('5')" class="num"></td>
+                <td><input type="button" value="6" onclick="disp('6')" class="num"></td>
+                <td><input type="button" value="-" onclick="disp('-')" class="opr"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="disp('7')" class="num"></td>
+                <td><input type="button" value="8" onclick="disp('8')" class="num"></td>
+                <td><input type="button" value="9" onclick="disp('9')" class="num"></td>
+                <td><input type="button" value="+" onclick="disp('+')" class="opr"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="disp('.')" class="deci"></td>
+                <td><input type="button" value="0" onclick="disp('0')" class="num"></td>
+                <td><input type="button" value="=" onclick="solve()" class="equal"></td>
+                <td><input type="button" value="*" onclick="disp('*')" class="opr"></td>
+
+            </tr>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
